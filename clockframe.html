@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+    <iframe id="clockFrame" width="50%" height="450px" src="drawclock2.php"></iframe>
+    <script type="text/javascript">
+        setInterval("reloadClockFrame()", 1000);
+        function reloadClockFrame() {
+            document.getElementById("clockFrame").src =
+                document.getElementById("clockFrame").src
+        }
+    </script>
+</body>
+</html>
+
